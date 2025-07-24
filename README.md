@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg)](https://opensource.org/licenses/MIT)
 [![Python Versions](https://img.shields.io/pypi/pyversions/20022genie)](https://pypi.org/project/20022genie/)
 
-Tired of hand-crafting ISO 20022 XML test files? Rub this magic lamp and let **20022genie** grant your testing wishes! ✨
+Tired of hand-crafting ISO20022 XML test files? Rub this magic lamp and let **20022genie** grant your testing wishes! ✨
 ```python
 from twentyoh22genie import Genie
 
@@ -28,7 +28,7 @@ with open("payment_test.xml", "w") as f:
 - ✅ **Pain-free pain.001/pain.002/pain.008 generation**
 - ✅ **Camt.053/054 bank statements on demand**
 - ✅ **pacs.008 payment instructions in a flash**
-- ✅ Fully compliant with ISO 20022 schemas
+- ✅ Fully compliant with ISO20022 schemas
 - ✅ Customizable transaction counts, amounts, and currencies
 - ✅ Random but realistic financial data generation
 - ✅ Namespaces and XML structure handled magically
@@ -36,7 +36,7 @@ with open("payment_test.xml", "w") as f:
 ## 🧞‍♂️ How to Summon the Genie
 1. **Install the magic lamp**:
    ```bash
-   pip install 20oh22genie
+   pip install twentyoh22genie
    ```
 2. **Rub the lamp** (import the library):
    ```python
@@ -71,16 +71,16 @@ report = Genie().grant_wish(
 )
 ```
 
-## 🪄 Genie Capabilities
+## 💪 Genie Capabilities
 | Message Type      | Key Features                          | Realistic Data? |
-|-------------------|---------------------------------------|----------------|
-| `pain.001`        | Credit transfers, batch payments      | ✅             |
-| `pain.002`        | Payment status reports                | ✅             |
-| `pain.008`        | Direct debit requests                 | ✅             |
-| `camt.053`        | Bank statements                       | ✅             |
-| `camt.054`        | Bank debit/credit notifications       | ✅             |
-| `pacs.008`        | FI-to-FI customer credit transfers    | ✅             |
-| `pacs.002`        | Payment status reports                | ✅             |
+|-------------------|---------------------------------------|-----|
+| `pain.001`        | Credit transfers, batch payments      | ✅ |
+| `pain.002`        | Payment status reports                | ✅ |
+| `pain.008`        | Direct debit requests                 | ✅ |
+| `camt.053`        | Bank statements                       | ✅ |
+| `camt.054`        | Bank debit/credit notifications       | ✅ |
+| `pacs.008`        | FI-to-FI customer credit transfers    | ✅ |
+| `pacs.002`        | Payment status reports                | ✅ |
 
 ## 🌟 Why Choose This Genie?
 - **No more XML headaches**: Forget complex schema details
@@ -115,10 +115,14 @@ Contributions welcome! Help us grant more wishes:
 
 ## 📜 Genie's License
 This magic is distributed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
+
 🧞‍♂️ **Remember: With great power comes great responsibility!**
+
 *Use this magic only for good (testing)*
-> "Test data generation shouldn't be a chore - let the genie handle the magic!"
-> - Every Developer Who Hates Manual XML Crafting
+
+> "Test data generation shouldn't be a chore - let the genie handle the magic!" - Every Developer Who Hated Manual XML Crafting ever
+
 Ready to stop wrestling with XML?
-`pip install 20022genie` and let the magic begin!
+`pip install twentyoh22genie` and let the magic begin!
