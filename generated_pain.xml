@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>eefa07cd-1179-4644-b1d2-b4ef4c</MsgId>
+      <CreDtTm>1976-12-11T04:02:42.257655</CreDtTm>
+      <NbOfTxs>3</NbOfTxs>
+      <InitgPty>
+        <Nm>Evans-Cruz</Nm>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>c4535c82-ee31-4f07-8b68-0ac012</PmtInfId>
+      <PmtMtd>CHK</PmtMtd>
+      <ReqdExctnDt>
+        <Dt>2014-03-07</Dt>
+      </ReqdExctnDt>
+      <Dbtr>
+        <Nm>Lisa Carpenter</Nm>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>GB55JYFH97309181057043</IBAN>
+        </Id>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BICFI>FGDHGBGW</BICFI>
+        </FinInstnId>
+      </DbtrAgt>
+      <CdtTrfTxInf>
+        <PmtId>
+          <EndToEndId>17223dc1-4568-4c3d-8714-c9f9eb</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="EUR">553.30</InstdAmt>
+        </Amt>
+        <CdtrAgt>
+          <FinInstnId>
+            <BICFI>GUQGGB3YPHZ</BICFI>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>Ellen Perry</Nm>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>GB09XHBJ06987850977195</IBAN>
+          </Id>
+        </CdtrAcct>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>

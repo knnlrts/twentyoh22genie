@@ -1,0 +1,17 @@
+[project]
+name = "twentyoh22genie"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "koen", email = "koen.naulaerts@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = ["xmlschema","faker"]
+
+[project.scripts]
+twentyoh22genie = "twentyoh22genie:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
