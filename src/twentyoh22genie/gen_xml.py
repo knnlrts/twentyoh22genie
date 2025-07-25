@@ -6,6 +6,7 @@
 
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
+from xml.etree.ElementTree import tostring
 import xmlschema
 from faker import Faker
 import random
@@ -230,9 +231,9 @@ def generate_xml():
 
 
 def prettify_xml(elem):
-    """Return a pretty-printed XML string"""
-    raw_string = ET.tostring(elem, encoding="unicode")
-    reparsed = minidom.parseString(raw_string)
+    """Return a pretty-printed XML string with proper formatting."""
+    rough_string = tostring(elem, encoding="utf-8")
+    reparsed = minidom.parseString(rough_string)
     return reparsed.toprettyxml(indent="  ")
 
 
@@ -241,10 +242,12 @@ def main():
     print("Generating XML...")
     root = generate_xml()
 
-    # Save to file
-    xml_string = prettify_xml(root)
-    with open("generated_pain.xml", "w", encoding="utf-8") as f:
-        f.write(xml_string)
+    # Save to file with proper XML declaration
+    tree = ET.ElementTree(root)
+    with open("generated_pain.xml", "wb") as f:
+        tree.write(f, encoding="utf-8", xml_declaration=True)
+    print(prettify_xml(root))
+
     print("XML saved to generated_pain.xml")
 
     # Validate against XSD
@@ -258,5 +261,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    for k, v in generators.items():
-        print(k, ": ", v())
